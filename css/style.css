@@ -1,0 +1,1087 @@
+img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.my_navbar {
+    /* background: linear-gradient( #02d5fa); */
+    border-bottom: 2px solid black;
+    font-family: "Roboto Slab", serif;
+}
+
+.nav_option a{
+    transition: 1s;
+}
+
+.nav_option a:hover {
+    border-bottom: 1px solid #05aff7;
+}
+
+.my_class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.images img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.text {
+    background: #00000000;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgb(96, 205, 255);
+}
+
+div h3 {
+    font-family: "Lobster Two", sans-serif;
+    color: #000;
+    
+}
+
+div h1 {
+    font-family: "Gravitas One", serif;
+    color: #37a9f0;
+}
+
+div p {
+    font-family: "Gravitas One", serif;
+    font-size: 19px;
+}
+
+.read_more {
+    box-shadow: 0 0 10px #7125f5;
+    width: 130px;
+    height: 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.read_more:hover {
+    background: linear-Gradient(#7125f5, #05aff7);
+    box-shadow: none;
+    color: white;
+}
+
+.images img {
+    box-shadow: 0px 0px 20px rgb(96, 205, 255);
+}
+
+main {
+    background-image: url();
+}
+
+/* ==============contact============== */
+
+.my_icon i {
+    color: #2799f3;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.my_icon h2 {
+    color: #000;
+    /* font-family: ; */
+}
+
+.social_media_icon i {
+    font-size: 35px;
+    color: black;
+}
+
+
+/* ==============contact============== */
+
+
+
+/* ==============service============== */
+
+.my_dentistry img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.services_page div div div{
+   transition: 0.5s;
+}
+
+
+/* .services_page div div div:hover {
+    transform: scale(1.2);
+} */
+
+#hover1 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease .5s forwards;
+}
+#hover2 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease 1s forwards;
+}
+#hover3 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease 1.5s forwards;
+}
+#hover4 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease 2s forwards;
+}
+#hover5 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease 2.5s forwards;
+}
+#hover6 {
+    opacity: 0;
+    animation: bottomTOtop 1s ease 3s forwards;
+}
+
+@keyframes bottomTOtop{
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* .services_page {
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+}
+
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+/* ==============service============== */
+
+
+
+/* ==============doctor============== */
+
+.doctor_pic img {
+    height: 400px;
+    width: 260px;
+}
+
+
+
+.messages-section {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Demo content */
+.demo-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.demo-content h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.demo-content p {
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Container */
+.modal-container {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 480px;
+  width: 100%;
+  margin: 20px;
+  position: relative;
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #e2e8f0;
+  transform: scale(1.1);
+}
+
+.close-btn::before,
+.close-btn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: #64748b;
+  border-radius: 1px;
+}
+
+.close-btn::before {
+  transform: rotate(45deg);
+}
+
+.close-btn::after {
+  transform: rotate(-45deg);
+}
+
+/* Header Section */
+.modal-header {
+  background: linear-gradient(135deg, #0d6efd 0%, #03a3ff 100%);
+  color: white;
+  padding: 40px 32px 32px;
+  text-align: center;
+  position: relative;
+}
+
+#modal-header {
+    display: block;
+    padding: 20px;
+}
+
+.modal-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.15"/><circle cx="20" cy="80" r="0.5" fill="white" opacity="0.15"/><circle cx="80" cy="30" r="0.5" fill="white" opacity="0.15"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.offer-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.offer-badge::before {
+  content: "🎉";
+  margin-right: 8px;
+}
+
+.modal-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.modal-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Body Section */
+.modal-body {
+  padding: 32px;
+}
+
+#subscriptionForm {
+    padding: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group::after {
+  content: "✓";
+  position: absolute;
+  right: 16px;
+  top: 38px;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: scale(0) rotate(180deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  pointer-events: none;
+}
+
+.form-group.valid::after {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+  position: relative;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #237bfd;
+  box-shadow: 0 0 0 3px rgba(16, 123, 185, 0.1);
+  transform: translateY(-2px) scale(1.01);
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.form-input:valid:not(:placeholder-shown) {
+  border-color: #237bfd;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.form-input:valid:not(:placeholder-shown)::after {
+  content: "✓";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #237bfd;
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: checkmark-appear 0.3s ease-out;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background: #237bfd;
+  border-color: #237bfd;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.checkbox-label a {
+  color: #237bfd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #237bfd 0%, #03a3ff 100%);
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 35px #237afd71;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:active {
+  transform: translateY(-1px) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+.submit-btn.loading {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  cursor: not-allowed;
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+
+.submit-btn.success {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: scale(1.05);
+  animation: success-bounce 0.6s ease-out;
+}
+
+@keyframes loading-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes success-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes checkmark-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) rotate(0deg);
+  }
+}
+
+
+
+
+/* Social Proof */
+.social-proof {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.social-proof-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-size: 0.875rem;
+  color: #374151;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.testimonial-author {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Confetti Animation */
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #10b981;
+  animation: confetti-fall 3s ease-out forwards;
+}
+
+.confetti-piece:nth-child(odd) {
+  background: #f59e0b;
+  border-radius: 50%;
+}
+
+.confetti-piece:nth-child(3n) {
+  background: #ef4444;
+  transform: rotate(45deg);
+}
+
+.confetti-piece:nth-child(4n) {
+  background: #8b5cf6;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.confetti-piece:nth-child(5n) {
+  background: #06b6d4;
+  width: 6px;
+  height: 12px;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Button morphing states */
+.submit-btn .btn-text {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.submit-btn .btn-icon {
+  display: inline-block;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.submit-btn.loading .btn-icon {
+  opacity: 1;
+  transform: scale(1);
+  animation: spin 1s linear infinite;
+}
+
+.submit-btn.success .btn-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced checkbox animation */
+.custom-checkbox input:checked ~ .checkmark {
+  background: #10b981;
+  border-color: #10b981;
+  animation: checkbox-checked 0.3s ease-out;
+}
+
+@keyframes checkbox-checked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  animation: checkmark-draw 0.3s ease-out;
+}
+
+@keyframes checkmark-draw {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 4px;
+    height: 0;
+  }
+  100% {
+    width: 4px;
+    height: 8px;
+  }
+}
+
+/* Security Badge */
+.security-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.security-badge::before {
+  content: "🔒";
+}
+@media (max-width: 640px) {
+  .modal-container {
+    margin: 10px;
+    max-width: none;
+  }
+
+  .modal-header {
+    padding: 32px 24px 24px;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-body {
+    padding: 24px;
+  }
+}
+
+/* Demo trigger button */
+.trigger-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.trigger-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+
+/* ==============doctor============== */
+
+
+/* ==============appointment============== */
+
+
+/* .bg_color {
+    background: linear-gradient(45deg, #00bee8, #3e79e6, #8058e7);
+    position: relative;
+    height: 70vh;
+}
+
+.appointment {
+    background: white;
+    padding: 40px;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    width: 70vw;
+}
+
+.information {
+    display: flex;
+} */
+
+.make_in h1 {
+    color: #000000;
+}
+
+.make_in p {
+    color: #0000009a;
+}
+
+#information {
+    background: linear-gradient(45deg, #00bee8, #3e79e6, #8058e7);
+    padding: 40px;
+}
+
+@media (width:390px) {
+    #information {
+        padding: 5px;
+        padding-bottom: 30px;
+    }
+    .bg_color .make_in {
+        padding: 0px;
+    }
+}
+
+#information h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* #appointment {
+    height: 100vh;
+} */
+
+.appointment {
+    background: linear-gradient(45deg, #00bee8, #3e79e6, #8058e7);
+    /* height: 80vh; */
+    width: 100%;
+}
+
+.bg_color {
+    background: #fff;
+    padding: 50px;
+    top: 100px;
+}
+
+.bg_color .make_in {
+    padding: 40px;
+}
+
+.make_in button {
+    margin: 20px 10px 20px 20px;
+    width: 10rem;
+    font-size: 20px;
+}
+
+.lorem {
+    border: 2px solid #00bee8;
+    background: #00bee8;
+    transition: .3s;
+}
+
+.lorem:hover {
+    border: 2px solid #00bee8;
+    background: #ffffff;
+    transform: scale(1.12);
+}
+
+.sit_dolor {
+    background: #fff;
+    border: 2px solid #00bee8;
+    transition: .3s;
+}
+
+.sit_dolor:hover {
+    background: #00bee8;
+    transform: scale(1.12);
+}
+
+#btn {
+    transition: .3s;
+    background: #00bee8;
+    border: 3px solid #ffffff;
+}
+
+#btn:hover {
+    background: white;
+    border: 3px solid #00bee8;
+    transform: scale(1.12);
+}
+
+/* ==============appointment============== */
+
+
+/* ==============footer============== */
+
+.footer {
+    background: #000000da;
+    color: #fff;
+}
+
+.phone_us {
+    padding: 50px  0 0 50px;
+}
+
+.icon_phone i {
+    color: #2799f3;
+    font-size: 30px;
+}
+
+.phone_us p {
+    color: #7e7e7e;
+}
+
+.email {
+    padding: 10px 0 0 50px;
+}
+
+.email p {
+    color: #7e7e7e;
+}
+
+.location {
+    padding: 10px 0 0px 50px;
+}
+
+.location p {
+    color: #7e7e7e;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.text_para a {
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+.text_para p {
+    color: #7e7e7e;
+}
+
+.follow_us_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow_us_icon i {
+    font-size: 40px;
+    width: 30px;
+    height: 34px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    border-radius: 8px;
+}
+.facebook_icon a i{
+    color: #0866ff;
+}
+
+.instagram_icon a i{
+    color: #ff068d;
+}
+
+.x_icon a i{
+    color: #000000;
+}
+
+.link_in_icon a i{
+    color: #0274b2;
+}
+
+.option ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.option ul li a {
+    color: #7e7e7e;
+    transition: .5s;
+}
+
+.option ul li a:hover {
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.opening_time p {
+    color: #7e7e7e;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ==============footer============== */
